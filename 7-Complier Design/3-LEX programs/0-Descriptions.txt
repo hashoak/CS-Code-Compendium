@@ -1,0 +1,9 @@
+1. Write a LEX program to count the number of vowels and consonants in a given 
+string. 
+2. Develop a scanner using LEX to count no. of operators, identifiers, keywords, 
+special Symbols in the given 'C' program. 
+3. Develop a scanner using LEX to count and print words that has atleast two 
+vowels 
+4. Develop a scanner using LEX to count and print words that start with "c‟ or "C‟ 
+and ends with “t” or “T”. 
+5. Write a LEX code to extract HTML tags from a file.

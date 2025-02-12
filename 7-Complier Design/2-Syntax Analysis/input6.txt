@@ -1,0 +1,10 @@
+6
+6
+S B C D E F
+a b c f g h
+a B D h
+c C
+b C,^
+E F
+g,^
+f,^
