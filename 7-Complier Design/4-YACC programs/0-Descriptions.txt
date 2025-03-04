@@ -1,0 +1,65 @@
+Program a
+Simple Calculator has been implemented using LEX and YACC.
+
+Sample Input and Output:
+Input    
+A = 120 
+A + 220 
+Output -> 340 
+
+Input 
+B = -10 
+B + A 
+Output -> 110 
+
+Input
+A / 0 
+Output -> INVALID AND THEN PROGRAM WILL EXIT. 
+
+Input
+C = 2 * A - B 
+Output -> 230
+
+
+
+Program b:
+Write a LEX/YACC program to validate the PAN Number. The input should be stored 
+in a text file. The valid PAN Card number must satisfy the following conditions, 
+• It should be 10 characters long. 
+• The first five characters should be any upper-case alphabets. 
+• The next four-characters should be any number from 0 to 9. 
+• The last (tenth) character should be the first alphabet of the PAN card holder 
+name. 
+• It should not contain any white spaces.
+
+Sample Input:
+Input.txt
+ANITHA QWERT1234A
+PAARI GREAT7686P
+VASU ASDGR 2345 V
+KESEVEN HUYT5657668K
+
+Sample Output: 
+VALID 
+VALID 
+INVALID 
+INVALID
+
+
+
+Program c 
+Infix to Postfix Conversion has been implemented using LEX and YACC.
+
+Sample Input and Output:
+I/P: 5 - 3 + 2 * 8 / 6
+O/P: 5  3  -  2  8  *  6  /  +
+
+I/P: 2 + 3 - 1 / 5 * 18
+O/P 2  3  +  1  5  /  18  *  -
+
+
+TO COMPILE and EXECUTE:
+> flex prgm.l 
+> bison -dy prgm.y 
+> gcc lex.yy.c y.tab.c -o prgm 
+> prgm 
