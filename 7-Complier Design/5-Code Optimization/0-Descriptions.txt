@@ -1,0 +1,51 @@
+1. Constant propagation 
+Constant propagation is the process of substituting the values of known constants in 
+expressions 
+
+Sample Input:
+input1.txt
+a=20 
+b=10 
+c=a+10 
+d=20-b 
+e=c*d
+ 
+Sample output:
+After constant propagation 
+c=20+10 
+Result: 30 
+d=20-10 
+Result: 10 
+e=30*10 
+Result: 300
+
+
+
+2. Eliminate common subexpressions and dead code elimination 
+Dead Code Elimination is an optimization that removes code which does not affect the program 
+results. 
+Common Subexpression Elimination is an optimization that searches for instances of identical 
+expressions, and replaces them with a single variable holding the computed value. 
+Sample Input:
+input1.txt
+a=10 
+b=c+d 
+e=c+d 
+f=b+e 
+r=f 
+
+Sample Output:
+After dead code elimination 
+b=c+d 
+e=c+d 
+f=b+e 
+r=f 
+Eliminate Common Expression 
+b=c+d 
+b=c+d 
+f=b+b 
+r=f 
+Optimized code 
+b=c+d 
+f=b+d 
+r=f
